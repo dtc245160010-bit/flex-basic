@@ -1,0 +1,114 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Body */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f5f5f5;
+  padding: 30px;
+}
+
+/* Tiêu đề */
+h1 {
+  text-align: center;
+  color: #333;
+  margin-bottom: 40px;
+}
+
+/* Mỗi ví dụ */
+.example {
+  max-width: 900px;
+  margin: 0 auto 40px;
+}
+
+.example h2 {
+  margin-bottom: 20px;
+  color: #333;
+}
+
+/* Flex Container */
+.container {
+  display: flex;
+  gap: 10px;
+  border: 2px solid #333;
+  padding: 10px;
+  background-color: white;
+}
+
+/* Flex Item */
+.item {
+  padding: 25px;
+  text-align: center;
+  font-size: 17px;
+  background-color: lightblue;
+  border: 1px solid #3498db;
+}
+
+/* =========================
+   VÍ DỤ 1: PX
+   ========================= */
+
+.example-1 .item1 {
+  flex-basis: 200px;
+}
+
+.example-1 .item2 {
+  flex-basis: 100px;
+}
+
+.example-1 .item3 {
+  flex-basis: 150px;
+}
+
+/* =========================
+   VÍ DỤ 2: COLUMN
+   ========================= */
+
+.example-2 {
+  flex-direction: column;
+  height: 400px;
+}
+
+.example-2 .item {
+  flex-basis: 100px;
+  background-color: lightgreen;
+}
+
+/* =========================
+   VÍ DỤ 3: %
+   ========================= */
+
+.example-3 .item {
+  flex-basis: 50%;
+  background-color: lightcoral;
+}
+
+/* =========================
+   VÍ DỤ 4: FLEX-GROW
+   ========================= */
+
+.example-4 {
+  width: 600px;
+  max-width: 100%;
+}
+
+.example-4 .item {
+  flex-basis: 100px;
+  background-color: lightyellow;
+}
+
+.example-4 .item1 {
+  flex-grow: 1;
+}
+
+.example-4 .item2 {
+  flex-grow: 2;
+}
+
+.example-4 .item3 {
+  flex-grow: 1;
+}
